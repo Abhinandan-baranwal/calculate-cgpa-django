@@ -1,8 +1,7 @@
 # Calculate CGPA Using Python Django
 
-A beginner-friendly web application for calculating a student's semester grade point average (SGPA) and cumulative grade point average (CGPA). Enter each subject's name, credit value, and grade to see the weighted result. This college project is intended for students who want to understand a simple Django application and weighted-average calculations.
+A beginner-friendly web application for calculating a student's semester grade point average (SGPA) and cumulative grade point average (CGPA). Enter each subject's name, credit value, and grade to see the weighted result.
 
-> **Grade scale note:** The grade-point values in this example are illustrative. Colleges and universities can use different grading scales, so update the mapping in `calculator/views.py` to match your institution.
 
 ## Features
 
