@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #f3f6fb;
+    color: #172033;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+}
+
+.container {
+    width: min(900px, calc(100% - 32px));
+    margin: 40px auto;
+    padding: 28px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 28px rgb(20 40 80 / 10%);
+}
+
+h1, h2 {
+    color: #183b70;
+}
+
+.scale, .note {
+    padding: 12px;
+    background: #eef4ff;
+    border-radius: 8px;
+}
+
+.subject-row {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr auto;
+    gap: 12px;
+    align-items: end;
+    margin: 16px 0;
+    padding: 16px;
+    border: 1px solid #d8e0ed;
+    border-radius: 8px;
+}
+
+label {
+    display: grid;
+    gap: 6px;
+    font-weight: 600;
+}
+
+input, select, button {
+    min-height: 40px;
+    padding: 8px 10px;
+    font: inherit;
+}
+
+input, select {
+    width: 100%;
+    border: 1px solid #aebbd0;
+    border-radius: 6px;
+}
+
+button {
+    border: 0;
+    border-radius: 6px;
+    background: #245db5;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #17488f;
+}
+
+.remove-row {
+    background: #68758a;
+}
+
+.actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.message, .result {
+    margin-top: 20px;
+    padding: 16px;
+    border-radius: 8px;
+}
+
+.error {
+    background: #fff0f0;
+    color: #9b1c1c;
+}
+
+.result {
+    background: #eaf8ef;
+}
+
+@media (max-width: 650px) {
+    .container {
+        margin: 16px auto;
+        padding: 18px;
+    }
+
+    .subject-row {
+        grid-template-columns: 1fr;
+    }
+}
